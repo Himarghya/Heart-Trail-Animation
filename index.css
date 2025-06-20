@@ -1,0 +1,32 @@
+body{
+    height:100vh;
+    width:auto;
+    background-color: black;
+    overflow: hidden;
+}
+span {
+    background-image: url("./028_-_Heart-512.webp");
+    height:100px;
+    width:100px;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50% , -50%);
+    pointer-events: none;
+    animation: animation1 4s linear;
+}
+@keyframes animation1{
+    from{
+        opacity:1;
+        transform: translate(-50% , -50%);
+        filter: hue-rotate(0);
+        
+    }
+    to{
+        opacity: 0;
+        transform: translate(-50% , -5000%);
+        filter: hue-rotate(720deg);
+
+    }
+}
